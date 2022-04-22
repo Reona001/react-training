@@ -1,14 +1,22 @@
 import React from 'react'
+// unsupported: import { Route, Switch } from 'react-router-dom'
+// new:
+import { Routes, Route } from 'react-router-dom'
 
-class App extends React.Component {
+//https://stackoverflow.com/questions/63124161/attempted-import-error-switch-is-not-exported-from-react-router-dom
+import Home from './Home'
+import About from './About'
+import Contact from './Contact'
+
+class App extends React.component {
   render () {
     return (
       <div>
-        <Switch>
-          <Route exact path="/" component={Home}/>
-          <Route exact path="/" component={About}/>
-          <Route exact path="/" component={Contact}/>
-        </Switch>
+        <Routes>
+          <Route  path="/" element={Home} />
+          <Route  path="/about" element={About} />
+          <Route  path="/contact" element={Contact} />
+        </Routes>
       </div>
     // <div>Hello World</div>
     // https://www.youtube.com/watch?v=5F_JUvPq410&ab_channel=zayne
