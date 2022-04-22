@@ -13,7 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     // <App />,
     <Router>
-      <Route path="/" component={App} />
+      <Routes>
+        <Route path="*" element={<App/>}></Route>
+      </Routes>
     </Router>,
     document.body.appendChild(document.createElement('div')),
   )

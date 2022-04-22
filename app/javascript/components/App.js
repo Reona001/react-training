@@ -8,15 +8,15 @@ import Home from './Home'
 import About from './About'
 import Contact from './Contact'
 
-class App extends React.component {
+class App extends React.Component {
   render () {
     return (
       <div>
-        <Routes>
-          <Route  path="/" element={Home} />
-          <Route  path="/about" element={About} />
-          <Route  path="/contact" element={Contact} />
-        </Routes>
+          <Routes>
+            <Route  path="/home" element={<Home />} />
+            <Route  path="/about" element={<About />} />
+            <Route  path="/contact" element={<Contact />}/>
+          </Routes>
       </div>
     // <div>Hello World</div>
     // https://www.youtube.com/watch?v=5F_JUvPq410&ab_channel=zayne
