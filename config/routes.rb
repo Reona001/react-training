@@ -6,3 +6,5 @@ Rails.application.routes.draw do
   # then it will redirect to each of our react routes.
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
+
+# To run real time react: ./bin/webpack-dev-server
