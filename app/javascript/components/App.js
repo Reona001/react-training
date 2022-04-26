@@ -7,6 +7,7 @@ import { Routes, Route } from 'react-router-dom'
 import Home from './Home'
 import About from './About'
 import Contact from './Contact'
+import Welcome from './Welcome'
 
 class App extends React.Component {
   render () {
@@ -16,6 +17,7 @@ class App extends React.Component {
             <Route  path="/home" element={<Home />} />
             <Route  path="/about" element={<About />} />
             <Route  path="/contact" element={<Contact />}/>
+            <Route  path="/welcome" element={<Welcome />}/>
           </Routes>
       </div>
     // <div>Hello World</div>
